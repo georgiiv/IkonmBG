@@ -1,40 +1,61 @@
 {
-	"apartments": [
-		{
-			"id": 1,
-			"apt_number": 100,
-			"num_of_residents": 3,
-			"password": "password",
-			"domoupravitel": false,
-		},
-		{
-			"id": 2,
-			"apt_number": 88,
-			"num_of_residents": 2,
-			"password": "anotherpassword",
-			"domoupravitel": true,
-		}
-	],
-	"months":[
-		{
-			"id": 1,
-			"date": "01-12-2015",
-		},
-		{
-			"id": 2,
-			"date": "01-01-2016",
-		}
-	],
-	"payments": [
-		{
-			"id": 1,
-			"month_id": 1,
-			"apartment_id": 1,
-		},
-		{
-			"id": 2,
-			"month_id": 2,
-			"apartment_id": 1,
-		}
-	]
+  "apartments": [
+    {
+      "id": 1,
+      "apt_number": 100,
+      "num_of_residents": 3,
+      "password": "password",
+      "domoupravitel": false
+    },
+    {
+      "id": 2,
+      "apt_number": 88,
+      "num_of_residents": 2,
+      "password": "anotherpassword",
+      "domoupravitel": true
+    },
+    {
+      "apt_number": 50,
+      "num_of_residents": 0,
+      "password": "",
+      "domoupravitel": false,
+      "id": 3
+    },
+    {
+      "apt_number": 51,
+      "num_of_residents": 0,
+      "password": "",
+      "domoupravitel": true,
+      "id": 4
+    },
+    {
+      "apt_number": 52,
+      "num_of_residents": 0,
+      "password": "",
+      "domoupravitel": false,
+      "id": 5
+    }
+  ],
+  "months": [
+    {
+      "id": 1,
+      "date": "01-12-2015"
+    },
+    {
+      "id": 2,
+      "date": "01-01-2016"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "month_id": 1,
+      "apartment_id": 1
+    },
+    {
+      "id": 2,
+      "month_id": 2,
+      "apartment_id": 1
+    }
+  ]
 }
