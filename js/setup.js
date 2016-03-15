@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	var ENDPOINT = "http://localhost:3000/";
 
 	$(document).on("click", "#create", function(){
 		//alert($('#firstapt').val());

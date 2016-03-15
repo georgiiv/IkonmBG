@@ -5,14 +5,21 @@
 </head>
 <body>
 
-<form>
-  <input id="user" name="user" min="1">user</br>
-  <input id="password" name="password" min="1">password</br>
-</form>
+<div id="loginform">
+	<form>
+	  <input id="user" type="text" name="user">apartment number</br>
+	  <input id="password" type="text" name="password">password</br>
+	</form>
 
- <button id="login" type="button">Login</button>
+	<button id="login" type="button">Login</button>
+</div>
+
+ <div id="info" style="display:none">
+ 	<p id="apt_number">dummy text</p>
+ 	<p id="residents">dummy text</p>
+ </div>
 
  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
- <script type="text/javascript" src="js/setup.js"></script>
+ <script type="text/javascript" src="js/login.js"></script>
 </body>
 </html> 
