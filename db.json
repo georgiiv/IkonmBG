@@ -11,7 +11,7 @@
       "id": 2,
       "apt_number": 88,
       "num_of_residents": 2,
-      "password": "anotherpassword",
+      "password": 1234,
       "domoupravitel": true
     },
     {
@@ -37,6 +37,18 @@
     {
       "id": 2,
       "date": "01-01-2016"
+    },
+    {
+      "date": "smth-smth2",
+      "id": 3
+    },
+    {
+      "date": "2-2016",
+      "id": 4
+    },
+    {
+      "date": "01-5555",
+      "id": 5
     }
   ],
   "payments": [

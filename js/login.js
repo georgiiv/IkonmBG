@@ -2,6 +2,7 @@ $(document).ready(function() {
 	ENDPOINT = "http://localhost:3000/";
 	currentuser = "";
 	currentuserID = "";
+	isDomoupravitel = "";
 
 	$(document).on("click", "#login", function(){
 		//alert($('#user').val());
@@ -24,6 +25,10 @@ $(document).ready(function() {
 
 				currentuser = response[0].apt_number;
 				currentuserID = response[0].id;
+				isDomoupravitel = response[0].domoupravitel;
+				if(isDomoupravitel){
+					$("#addMonth").show("slow");
+				}
 			}
 
 		});
@@ -49,5 +54,21 @@ $(document).ready(function() {
 				}),
 				dataType: "json"
 		})
+	});
+
+	$(document).on("click", "#showMonthForm", function(){
+		$("#monthForm").toggle("slow");
+	});
+
+	$(document).on("click", "#createMonth", function(){
+		$.ajax("http://localhost:3000/months", {
+			method: "POST",
+			contentType: "application/json; charset=utf-8",
+			data: JSON.stringify({
+				date: $('#month').val() + "-" + $('#year').val()
+			}),
+			dataType: "json"
+		})
+		$("#monthForm").toggle("slow");
 	});
 });
