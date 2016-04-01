@@ -2,22 +2,36 @@
 <html>
 <head>
 <title></title>
+
+<link rel="stylesheet" type="text/css" href="css/signin.css" >
+
 </head>
 <body>
 
-<div id="loginform">
-	<form>
-	  <input id="user" type="text" name="user">apartment number</br>
-	  <input id="password" type="text" name="password">password</br>
-	</form>
 
-	<button id="login" type="button">Login</button>
+<div class="container">
+
+	<div id="loginform">
+		<form class="form-signin">
+		  <h2 class="form-singin-heading">Enter your credentials</h2>
+		  <input id="user" type="text" name="user" class="form-control" placeholder="Apt. number"></br>
+		  <input id="password" type='password' name="password" class="form-control" placeholder="Password"></br>
+		  <button id="login" type="button" class="btn btn-lg btn-primary btn-block">Login</button>
+		</form>
+	</div>
+
 </div>
 
- <div id="info" style="display:none">
+<div id="info" style="display:none">
  	<p id="apt_number">dummy text</p>
  	<p id="residents">dummy text</p>
- </div>
+ 	<button id="changepass" type="button" class="btn btn-lg btn-primary btn-block">Change Password</button>
+</div>
+
+<div id="change" style="display:none">
+	<input id="newpass" type='password' name="password" class="form-control" placeholder="New password"></br>
+	<button id="acceptpass" type="button" class="btn btn-lg btn-primary btn-block">Change Password</button>
+</div>
 
  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
  <script type="text/javascript" src="js/login.js"></script>

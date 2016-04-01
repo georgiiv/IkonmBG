@@ -2,16 +2,20 @@
 <html>
 <head>
 <title></title>
+
+<link rel="stylesheet" type="text/css" href="css/signin.css" >
+
 </head>
 <body>
 
-<form>
-  <input id="firstapt" type="number" name="firstapt" min="1">First Apartment Number</br>
-  <input id="lastapt" type="number" name="lastapt" min="1">Last Apartment Number</br>
-  <input id="upravitel" type="number" name="upravitel" min="1">Taxer's apartment number</br>
+<form class="form-signin">
+	<input id="firstapt" type="number" name="firstapt" min="1" class="form-control" placeholder="First Apt Number"></br>
+	<input id="lastapt" type="number" name="lastapt" min="1" class="form-control" placeholder="Last Apt Number"></br>
+	<input id="upravitel" type="number" name="upravitel" min="1" class="form-control" placeholder="Taxer's number"></br>
+	<button id="create" type="button">Create Users</button>
 </form>
 
- <button id="create" type="button">Create Users</button>
+ 
 
  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
  <script type="text/javascript" src="js/setup.js"></script>

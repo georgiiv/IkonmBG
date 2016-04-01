@@ -1,10 +1,10 @@
 {
   "apartments": [
     {
-      "id": 1,
       "apt_number": 100,
       "num_of_residents": 3,
-      "password": "password",
+      "password": 1234,
+      "id": 1,
       "domoupravitel": false
     },
     {
@@ -15,25 +15,18 @@
       "domoupravitel": true
     },
     {
-      "apt_number": 50,
+      "apt_number": 67,
       "num_of_residents": 0,
-      "password": "",
+      "password": "asd",
       "domoupravitel": false,
       "id": 3
     },
     {
-      "apt_number": 51,
-      "num_of_residents": 0,
-      "password": "",
-      "domoupravitel": true,
-      "id": 4
-    },
-    {
-      "apt_number": 52,
+      "apt_number": 68,
       "num_of_residents": 0,
       "password": "",
       "domoupravitel": false,
-      "id": 5
+      "id": 4
     }
   ],
   "months": [
