@@ -1,46 +1,42 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <title></title>
-
-	<script src="http://www.w3schools.com/lib/w3data.js"></script>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	
+
+	<link rel="stylesheet" type="text/css" href="css/signin.css" >
+
 </head>
+<body>
 
-	<style>
-	#unpaidMonths{
-		font-size: 20px;
-	}
-	</style>
+	<div class="container">
 
-	<div w3-include-html="header.html"></div>
+		<div id="loginform">
+			<form class="form-signin">
+			  <h2 class="form-singin-heading">Register</h2>
+			  <input id="user" type="number" min="1" class="form-control" placeholder="Apt. number">
+			  <input id="password" type='password' class="form-control" placeholder="Password">
+			  <input id="residents" type='number' min="1" class="form-control" placeholder="Number of residents">
+			  <button id="register" type="button" class="btn btn-lg btn-primary btn-block">Register</button>
+			  <a href="login.html">Click here if you have an account</a>
+			</form>
+		</div>
+
+	</div>
 
 	
 
-	<div class="contrainer">
 
-	<center>
-	<div id="test"></div><br><br>
-
-	<div id="unpaidMonths" style="display:none">
-	<p>Unpaid Months:</p>		
-	</div>
-	</center>
-
-	</div>
-
-	<script>w3IncludeHTML();</script>
 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
 	<script type="text/javascript" src="js/js.cookie.js"></script>
-	<script type="text/javascript" src="js/header.js"></script>
 
+	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>

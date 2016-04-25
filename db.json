@@ -27,40 +27,107 @@
       "password": "",
       "domoupravitel": false,
       "id": 4
+    },
+    {
+      "apt_number": 101,
+      "num_of_residents": 5,
+      "password": 1234,
+      "domoupravitel": false,
+      "id": 5
+    },
+    {
+      "apt_number": 102,
+      "num_of_residents": 1234,
+      "password": 1234,
+      "domoupravitel": false,
+      "id": 6
+    },
+    {
+      "apt_number": 555,
+      "num_of_residents": 20,
+      "password": 1234,
+      "domoupravitel": false,
+      "id": 7
     }
   ],
   "months": [
     {
       "id": 1,
-      "date": "01-12-2015"
+      "date": "12-2015"
     },
     {
-      "id": 2,
-      "date": "01-01-2016"
-    },
-    {
-      "date": "smth-smth2",
-      "id": 3
-    },
-    {
-      "date": "2-2016",
-      "id": 4
-    },
-    {
-      "date": "01-5555",
-      "id": 5
+      "date": "01-2016",
+      "id": 2
     }
   ],
   "payments": [
     {
-      "id": 1,
       "month_id": 1,
-      "apartment_id": 1
+      "apartment_id": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "month_id": 2,
-      "apartment_id": 1
+      "month_id": 1,
+      "apartment_id": 3,
+      "id": 3
+    },
+    {
+      "month_id": 1,
+      "apartment_id": 4,
+      "id": 4
+    },
+    {
+      "month_id": 1,
+      "apartment_id": 5,
+      "id": 5
+    },
+    {
+      "month_id": 1,
+      "apartment_id": 6,
+      "id": 6
+    },
+    {
+      "month_id": 1,
+      "apartment_id": 7,
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "poster_id": 2,
+      "post_content": "Nemam voda, vrat. help pls",
+      "date_of_posting": "25/4/2016",
+      "id": 1
+    },
+    {
+      "poster_id": 2,
+      "post_content": "sega i tok nqmam :'(",
+      "date_of_posting": "25/4/2016",
+      "id": 2
+    },
+    {
+      "poster_id": 2,
+      "post_content": "Български пост :ОООО",
+      "date_of_posting": "25/4/2016",
+      "id": 4
+    },
+    {
+      "poster_id": 1,
+      "post_content": "Стига мрънка ве Мартине!",
+      "date_of_posting": "25/4/2016",
+      "id": 5
+    },
+    {
+      "poster_id": 2,
+      "post_content": "dsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghsdsghsfgh adfhs fghs",
+      "date_of_posting": "25/4/2016",
+      "id": 6
+    },
+    {
+      "poster_id": 1,
+      "post_content": "bam",
+      "date_of_posting": "25/4/2016",
+      "id": 7
     }
   ]
 }

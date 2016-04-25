@@ -10,37 +10,42 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/signin.css" >
 	
 </head>
 
-	<style>
-	#unpaidMonths{
-		font-size: 20px;
-	}
-	</style>
-
 	<div w3-include-html="header.html"></div>
 
-	
+<div class="container">
+<div id="loginform">
+<form class="form-signin">
 
-	<div class="contrainer">
-
-	<center>
-	<div id="test"></div><br><br>
-
-	<div id="unpaidMonths" style="display:none">
-	<p>Unpaid Months:</p>		
+	<div id="numOfRes">
+		<h2 id="resInfo" class="form-singin-heading">Num. of residents</h2>
+		<input id="newres" type='number' placeholder="Number of residents" class="form-control">
+		<button id="acceptres" type="button" class="btn btn-lg btn-primary btn-block">Change Number</button>
 	</div>
-	</center>
 
+	<div id="changePassword">
+		<h2 class="form-singin-heading">Change password</h2>
+		<input id="oldpass" type='password' placeholder="Old Password" class="form-control">
+		<input id="newpass" type='password' placeholder="New Password" class="form-control">
+		<button id="changepass" type="button" class="btn btn-lg btn-primary btn-block">Change Password</button>
 	</div>
+
+</form>
+</div>
+</div>
+
 
 	<script>w3IncludeHTML();</script>
 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/account.js"></script>
 	<script type="text/javascript" src="js/js.cookie.js"></script>
 	<script type="text/javascript" src="js/header.js"></script>
 
+	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>

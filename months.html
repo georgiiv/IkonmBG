@@ -12,32 +12,56 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	
 </head>
+	<div w3-include-html="header.html"></div>
 
 	<style>
-	#unpaidMonths{
+	.unpaid{
+		color: red;
+	}
+	.paid{
+		color: green;
+	}
+	#monthPayments{
+		text-align: center;
+	}
+	#monthsholder{
+		text-align: center;
 		font-size: 20px;
+	}
+	#showMonths{
+		width: 150px;
+	}
+	#showMonthsForm{
+		width: 150px;
 	}
 	</style>
 
-	<div w3-include-html="header.html"></div>
+	<div class="container">
+		<form class="form-signin">
 
-	
+		<center>
+		<button class="btn" id="showMonthForm" type="button" >Create new Month</button>
+		<button class="btn" id="showMonths" type="button" >List Months</button></br></br>
+		</center>
+		
+		<div id="monthForm" style="display:none">
+			<input class="form-control" id="month" type="number" min="1" placeholder="Month Number">
+			<input class="form-control" id="year" type="number" min="1" placeholder="Year Number">
+			<button class="btn" id="createMonth" type="button">Create Month</button></br></br>
+		</div>	
 
-	<div class="contrainer">
+		<div id="monthsholder" style="display:none">		
+		</div>
 
-	<center>
-	<div id="test"></div><br><br>
+		<div id="monthPayments" style="display:none">		
+		</div>
 
-	<div id="unpaidMonths" style="display:none">
-	<p>Unpaid Months:</p>		
-	</div>
-	</center>
-
+		</form>
 	</div>
 
 	<script>w3IncludeHTML();</script>
 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/months.js"></script>
 	<script type="text/javascript" src="js/js.cookie.js"></script>
 	<script type="text/javascript" src="js/header.js"></script>
 
